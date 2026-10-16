@@ -25,12 +25,5 @@ public class MainVarian6 {
         MesinCetak mesin = new MesinCetak("MC-01");
         mesin.cetak(reguler);
         mesin.cetak(vip);
-
-        // Percobaan jual ke studio yang tidak ada
-        bioskop.jualTiket(vip, 4);
-
-        // Pendapatan studio 1
-        System.out.println("Pendapatan Studio 1 : " + bioskop.getStudio(1).hitungPendapatan());
     }
 }
-
