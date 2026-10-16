@@ -27,3 +27,4 @@ public class MainVarian6 {
         mesin.cetak(vip);
     }
 }
+

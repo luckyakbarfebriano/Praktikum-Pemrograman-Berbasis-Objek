@@ -9,7 +9,7 @@ public class Bioskop {
         this.nama = nama;
         this.daftarStudio = new Studio[jumlahStudio];
         for (int i = 0; i < jumlahStudio; i++) {
-            daftarStudio[i] = new Studio(i + 1, kapasitasStudio); // Composition: Studio dibuat di dalam Bioskop
+            daftarStudio[i] = new Studio(i + 1, kapasitasStudio); 
         }
     }
 
@@ -17,7 +17,6 @@ public class Bioskop {
         this.manajer = manajer;
     }
 
-    // Overloading 1: tanpa nomor studio, masuk ke studio pertama yang masih punya kursi
     public void jualTiket(Tiket t) {
         if (t == null) {
             System.out.println("Tiket tidak valid.");
@@ -31,7 +30,6 @@ public class Bioskop {
         System.out.println("Semua studio penuh.");
     }
 
-    // Overloading 2: dengan nomor studio tertentu
     public void jualTiket(Tiket t, int nomorStudio) {
         if (t == null) {
             System.out.println("Tiket tidak valid.");
@@ -48,7 +46,7 @@ public class Bioskop {
     }
 
     public Studio getStudio(int nomor) {
-        if (nomor < 1 || nomor > daftarStudio.length) { // guard clause batas array
+        if (nomor < 1 || nomor > daftarStudio.length) { 
             return null;
         }
         return daftarStudio[nomor - 1];
