@@ -1,15 +1,15 @@
 package ppbo.uts;
 
-public class utsMain {
+public class MainVarian6 {
     
     public static void main(String[] args) {
         // 1. Bioskop dengan 3 studio kapasitas 50, manajer Pak Hadi
         Bioskop bioskop = new Bioskop("Sinema Malang", 3, 50);
         bioskop.setManajer(new Manajer("Pak Hadi"));
 
-        // 2. Penonton (noHp bebas karena tidak ada di data uji)
-        Penonton andi = new Penonton("Andi", "081234567890");
-        Penonton sinta = new Penonton("Sinta", "081298765432");
+        // 2. Penonton 
+        Penonton andi = new Penonton("Andi", "08123456789");
+        Penonton sinta = new Penonton("Sinta", "08987654321");
 
         // 3. Tiket
         TiketReguler reguler = new TiketReguler("T-001", "Laskar Pelangi", 40000, true);
